@@ -7,10 +7,8 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 ## Getting Started
 
 > 1. Download the project</br>
-> 2. Write: ```npm install```</br>
-> 3. Create a database with the telegram_db.sql script</br>
-> 4. Alter the file server/routes/connect.js to connect your database</br>
-> 5. Run 2 different CMDs to run: ```npm run dev``` && npm ```run start-server```
+> 2. Run: ```npm install```</br>
+> 3. Run: ```npm run start```
 
 ## Prerequisites
 
