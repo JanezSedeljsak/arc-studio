@@ -13,11 +13,12 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 ## Prerequisites
 
 * NodeJS 
+* Yarn
 
 ## Built With
 * [ReactNative](https://facebook.github.io/react-native/)
+* [TypeScript](https://www.typescriptlang.org)
 * some extra js libraries....
-  
 
 ## Architecture
 
