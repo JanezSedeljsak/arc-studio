@@ -4,6 +4,8 @@
 
 The plan is to make a simple app with the options to view fresh news from the NewsApi... Having the option to browse weather for different locations and also get a post a day from the NASA API... 
 
+![alt text](https://github.com/JanezSedeljsak/news-app-mobile/blob/master/app-img.jpg)
+
 ## Getting Started
 
 > 1. Download the project</br>
