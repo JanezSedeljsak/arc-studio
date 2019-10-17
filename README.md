@@ -27,7 +27,6 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 - [x] News display list
 - [x] News filtering
 - [x] Add custom components
-- [ ] Indepth view for specific article
 - [ ] API data for news
 - [ ] Weather tab
 - [ ] Weather API
