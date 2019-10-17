@@ -22,6 +22,17 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 * [TypeScript](https://www.typescriptlang.org)
 * some extra js libraries....
 
+
+## Tasks
+- [x] News display list
+- [x] News filtering
+- [x] Add custom components
+- [ ] API data for news
+- [ ] Weather tab
+- [ ] Weather API
+- [ ] NASA article of the day
+- [ ] Main menu
+
 ## Architecture
 
 ![alt text](https://d1xple9gxb4tux.cloudfront.net/assets/images/article_images/bd4442aed16acafc54c7943d34abff0edadfa74c.png?1553504574)
