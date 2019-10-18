@@ -33,10 +33,6 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 - [ ] NASA article of the day
 - [x] Main menu
 
-## Architecture
-
-![alt text](https://d1xple9gxb4tux.cloudfront.net/assets/images/article_images/bd4442aed16acafc54c7943d34abff0edadfa74c.png?1553504574)
-
 ## License
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
