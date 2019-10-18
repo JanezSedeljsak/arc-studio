@@ -31,7 +31,7 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 - [ ] Weather tab
 - [ ] Weather API
 - [ ] NASA article of the day
-- [x] Main menu
+- [ ] Main menu
 
 ## Architecture
 

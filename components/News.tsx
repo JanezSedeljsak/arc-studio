@@ -7,7 +7,7 @@ import NewsAPI from "newsapi"
 import moment from "moment"
 
 
-export interface Props { /* no props for the main component */ }
+export interface Props { back: any }
 
 interface State {
     filter: string,
@@ -15,13 +15,6 @@ interface State {
     inDepthView: Object
     isLoading: boolean
 }
-
-const items : Array<Object> = [
-    { name: 'Weather', background: '#3498db', icon: 'cloud' },
-    { name: 'Nasa', background: '#ef0202', icon: 'space-shuttle' },
-    { name: 'News', background: '#efcf02', icon: 'folder-open' },
-    { name: 'Close', background: '#02ef1d', icon: 'close' }
-]
 
 export default class App extends React.Component<Props, State> {
     constructor(props: Props) {
@@ -117,7 +110,7 @@ export default class App extends React.Component<Props, State> {
     render() {
         const { news, filter } = this.state
         return (
-            <View style={styles.container}>
+            <View>
                 {news.length ?
                     <ScrollView style={{ marginTop: 15, marginBottom: 20, padding: 20 }}>
                         <SearchInput
@@ -153,12 +146,6 @@ export default class App extends React.Component<Props, State> {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
     searchInput: {
         padding: 10,
         borderColor: '#CCC',

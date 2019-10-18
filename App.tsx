@@ -13,16 +13,15 @@ export interface Props { /* no props for the main component */ }
 
 interface State {
     isLoading: boolean,
-    currView: any
-}
-
-const components: any = { Nasa: <Nasa />, Weather: <Weather />, News: <News /> }
+    currView: any,
+    components: any
+} 
 
 const items: Array<Object> = [
-    { name: 'Weather', background: '#3498db', icon: 'cloud' },
-    { name: 'Nasa', background: '#ef0202', icon: 'space-shuttle' },
-    { name: 'News', background: '#efcf02', icon: 'folder-open' },
-    { name: 'Close', background: '#02ef1d', icon: 'close' }
+    { name: 'Weather', background: '#365f6b', icon: 'cloud' },
+    { name: 'Nasa', background: '#3fc1c9', icon: 'space-shuttle' },
+    { name: 'News', background: '#a0118f', icon: 'folder-open' },
+    { name: 'Close', background: '#fc5185', icon: 'close' }
 ]
 
 export default class App extends React.Component<Props, State> {
@@ -30,9 +29,16 @@ export default class App extends React.Component<Props, State> {
         super(props)
         this.state = {
             isLoading: false,
-            currView: null
+            currView: null,
+            components: { 
+                Nasa: <Nasa back={this.gotoHome} />, 
+                Weather: <Weather back={this.gotoHome}/>, 
+                News: <News back={this.gotoHome}/> 
+            }
         }
     }
+
+    gotoHome = () => this.setState({ currView: null })
 
     // when component starts loading
     componentWillMount = () => this.setState({ isLoading: true })
@@ -46,6 +52,7 @@ export default class App extends React.Component<Props, State> {
         : this.setState({ currView: view.name })
 
     render() {
+        const { components } = this.state
         return (
             <View style={styles.container}>
                 <View>
@@ -54,7 +61,7 @@ export default class App extends React.Component<Props, State> {
                         textContent={'Loading...'}
                         textStyle={{ color: '#FFF' }}
                     />
-                    {!this.state.currView ?
+                    {!this.state.currView && !this.state.isLoading ?
                         <View>
                             <Card
                                 key={"_dashCard"}

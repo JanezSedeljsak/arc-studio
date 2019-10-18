@@ -4,7 +4,9 @@ import { Card, ListItem, Button, Icon, SearchBar } from 'react-native-elements'
 import moment from "moment"
 
 
-export interface Props { /* no props for the main component */ }
+export interface Props {
+    back: any
+}
 
 interface State {
     isLoading: boolean
