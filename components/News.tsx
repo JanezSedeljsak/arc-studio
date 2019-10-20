@@ -112,14 +112,14 @@ export default class App extends React.Component<Props, State> {
         return (
             <View>
                 {news.length ?
-                    <ScrollView style={{ marginTop: 15, marginBottom: 20, padding: 20 }}>
+                    <ScrollView style={{ marginTop: 20, marginBottom: 50, padding: 20 }}>
                         <SearchInput
                             onChangeText={(term) => { this.updateSearch(term) }}
                             style={styles.searchInput}
-                            placeholder="Type a message to search"
+                            placeholder="Filter articles..."
                         />
                         {news
-                            .filter(article => article.title.includes(filter))
+                            .filter(article => article.title.toLocaleLowerCase().includes(filter.toLocaleLowerCase()))
                             .map((article, _index) =>
 
                                 <Card

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import { StyleSheet, Text, View, ScrollView, Alert } from 'react-native'
 import { Card, ListItem, Button, Icon, SearchBar } from 'react-native-elements'
-import moment from "moment"
+import moment from 'moment'
 
 
 export interface Props { article: any }
@@ -12,14 +12,14 @@ export default class App extends React.Component<Props, State> {
         super(props)
     }
 
-    goBack = () => console.log("go back");
+    goBack = () => console.log('go back');
 
     render() {
         const { article } = this.props
         return (
             <View>
                 <Card
-                    key={"_singleView"}
+                    key={'_singleView'}
                     image={{ uri: article.urlToImage }}
                     title={article.title}>
                     <Text style={{ marginBottom: 10 }}>
