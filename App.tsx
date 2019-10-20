@@ -14,8 +14,7 @@ export interface Props { /* no props for the main component */ }
 
 interface State {
     isLoading: boolean,
-    currView: any,
-    components: any
+    currView: any
 } 
 
 const items: Array<Object> = [
@@ -30,12 +29,7 @@ export default class App extends React.Component<Props, State> {
         super(props)
         this.state = {
             isLoading: false,
-            currView: null,
-            components: { 
-                Nasa: <Nasa back={this.gotoHome} />, 
-                Weather: <Weather back={this.gotoHome}/>, 
-                News: <News back={this.gotoHome}/> 
-            }
+            currView: null
         }
     }
 
@@ -53,7 +47,11 @@ export default class App extends React.Component<Props, State> {
         : this.setState({ currView: view.name })
 
     render() {
-        const { components } = this.state
+        const components : Object = { 
+            Nasa: <Nasa back={this.gotoHome} />, 
+            Weather: <Weather back={this.gotoHome}/>, 
+            News: <News back={this.gotoHome}/> 
+        }
         return (
             <View style={styles.container}>
                 <View>
