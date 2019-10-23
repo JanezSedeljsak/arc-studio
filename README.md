@@ -28,9 +28,9 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 - [x] News filtering
 - [x] Add custom components
 - [ ] API data for news
-- [ ] Weather tab
+- [x] Weather tab
 - [ ] Weather API
-- [ ] NASA article of the day
+- [x] NASA article of the day
 - [x] Main menu
 
 ## License
