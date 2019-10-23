@@ -26,10 +26,12 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 ## Tasks
 - [x] News display list
 - [x] News filtering
+- [ ] Weather location search
 - [x] Add custom components
 - [ ] API data for news
 - [x] Weather tab
 - [ ] Weather API
+- [ ] Nasa API
 - [x] NASA article of the day
 - [x] Main menu
 
