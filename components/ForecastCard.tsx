@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, Image } from 'react-native'
 import { Text, Card, Divider } from 'react-native-elements'
+import moment from 'moment'
 
 export interface Props {
     detail: any,
@@ -13,11 +14,6 @@ interface State {
 export default class ForecastCard extends React.Component<Props, State> {
 
     render() {
-        let time;
-        var date = new Date(this.props.detail.dt * 1000);
-        var hours = date.getHours();
-        var minutes = "0" + date.getMinutes();
-        time = hours + ':' + minutes.substr(-2);
 
         return (
             <Card containerStyle={styles.card}>
@@ -25,7 +21,7 @@ export default class ForecastCard extends React.Component<Props, State> {
 
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Image style={{ width: 100, height: 100 }} source={{ uri: "https://openweathermap.org/img/w/" + this.props.detail.weather[0].icon + ".png" }} />
-                    <Text style={styles.time}>{time}</Text>
+                    <Text style={styles.time}>{moment(new Date(this.props.detail.dt * 1000)).format("HH:mm")}</Text>
                 </View>
 
                 <Divider style={{ backgroundColor: '#dfe6e9', marginVertical: 20 }} />
