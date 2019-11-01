@@ -80,7 +80,7 @@ export default class Weather extends React.Component<Props, State> {
                 {forecast.list && <View>
                         {forecast.list.map((item : any, _index: String ) =>
                             <Card
-                                key={_index}
+                                key={"_wThR" + _index}
                                 image={{ uri: `https://openweathermap.org/img/w/${item.weather[0].icon}.png` }}
                                 title={`${moment(new Date(item.dt * 1000)).format("HH:mm")}`}>
                                 <Text style={{ marginBottom: 10 }}>
