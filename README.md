@@ -27,11 +27,12 @@ The plan is to make a simple app with the options to view fresh news from the Ne
 - [x] News display list
 - [x] News filtering
 - [ ] Weather location search
+- [ ] Gesture recognition fix
 - [x] Add custom components
-- [ ] API data for news
+- [x] API data for news
 - [x] Weather tab
-- [ ] Weather API
-- [ ] Nasa API
+- [x] Weather API
+- [x] Nasa API
 - [x] NASA article of the day
 - [x] Main menu
 
