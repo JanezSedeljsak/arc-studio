@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Alert, BackHandler } from 'react-native'
 import { Card } from 'react-native-elements'
 import Dashboard from 'react-native-dashboard'
 import Spinner from 'react-native-loading-spinner-overlay'
-import GestureRecognizer from 'react-native-swipe-gestures'
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures'
 
 // my components
 import Nasa from './components/Nasa'

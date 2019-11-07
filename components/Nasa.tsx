@@ -35,7 +35,18 @@ export default class App extends React.Component<Props, State> {
         )
             .then(x => x.json())
             .then(result => this.setState({ data: result }));*/
+        this.fetchFromNasa()
     }
+
+    fetchFromNasa = async() => {
+        fetch(
+            'https://api.nasa.gov/planetary/apod?api_key=bzYdhe9wEL2NXaCklkQWwoMMXVBeouzkTKA0qYXA'
+        )
+            .then(x => x.json())
+            .then(result => this.setState({ data: result }))
+    }
+
+
 
     render() {
         const { data } = this.state
