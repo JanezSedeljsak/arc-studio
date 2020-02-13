@@ -32,8 +32,8 @@ export default class App extends React.Component<Props, State> {
         this.getNewsFrom()
     }
 
-    getNewsFrom  = async() => {
-        fetch('https://newsapi.org/v2/everything?q=bitcoin&from=2019-10-07&sortBy=publishedAt&apiKey=8717edacdc164636841ed4b6c551b178')
+    getNewsFrom  = async () => {
+        fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=8717edacdc164636841ed4b6c551b178')
             .then(x => x.json())
             .then(result => this.setState({ news: result.articles }))
     }

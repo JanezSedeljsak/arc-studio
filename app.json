@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "news-app",
-    "slug": "news-app-mobil",
+    "name": "ArcStudio",
+    "slug": "ArcStudio",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
@@ -25,6 +25,11 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+        "package": "com.janezsedeljsak.arcstudio",
+        "versionCode": 1,
+        "icon": "./assets/icon.png"
     }
   }
 }

@@ -73,7 +73,7 @@ export default class App extends React.Component<Props, State> {
                             <Dashboard items={items} background={true} card={(el: any) => this.switchView(el)} column={2} />
                         </View>
                         :
-                        <GestureRecognizer onSwipeLeft={this.gotoHome}>
+                        <GestureRecognizer onSwipeRight={() => this.gotoHome()}>
                             <View>{components[this.state.currView]}</View>
                         </GestureRecognizer>
                         
