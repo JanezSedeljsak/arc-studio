@@ -1,7 +1,7 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 17604,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
   "expoServerNgrokUrl": "https://bn-jbh.janez-888.arc-studio.exp.direct",
   "packagerNgrokUrl": "https://packager.bn-jbh.janez-888.arc-studio.exp.direct",
   "ngrokPid": 18496
