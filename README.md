@@ -2,7 +2,7 @@
 
 # News App Mobile
 
-The plan is to make a simple app with the options to view fresh news from the NewsApi... Having the option to browse weather for different locations and also get a post a day from the NASA API... 
+This is a simple demo of a multiuse app in React Native with TypeScript and a simple connection do some free APIs from the web (weather, nasa, news...).
 
 ![alt text](https://github.com/JanezSedeljsak/news-app-mobile/blob/master/app-img.jpg)
 
